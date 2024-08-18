@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Book {
+  title: String!
+  author: String!
+  year: Int!
+}
+
+type Query {
+  sayHello: String!
+  books(filterBookDto: FilterBookDto): [Book!]!
+}
+
+input FilterBookDto {
+  title: String
+  author: String
+  year: Int
+}
